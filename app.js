@@ -3,22 +3,21 @@ var array = string.split("");
 var timer;
 
 function frameLooper () {
-  if (array.length > 0) {
+  if (array.length > 0) 
+  {
     document.getElementById("text").innerHTML += array.shift();
-  } else {
+  } 
+  else 
+  {
     clearTimeout(timer);
-      }
+  }
   loopTimer = setTimeout('frameLooper()',60); 
 
 }
 frameLooper();
 
-
 function typingEffect() {
-    const contactTexts = shuffleArray(['Desenvolvedor Web Junior', 
-                                        'Python Developer', 
-                                        'Inteligência Artificial', 
-                                        'Machine Learning (Aprendizado de Maquina)']);
+    const contactTexts = shuffleArray(['Desenvolvedor Web Jr', 'Python', 'Inteligência Artificial', 'Deep Learning (Aprendizado Profundo)', 'Machine Learning (Aprendizado de Maquina)']);
     const typedtext = document.getElementsByClassName("typedtext")[0];
     let removing = false;
     let idx = char = 0;
